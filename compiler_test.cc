@@ -2,7 +2,6 @@
 
 #include <gtest/gtest.h>
 
-#include <stdexcept>
 #include <string>
 #include <vector>
 
@@ -74,9 +73,7 @@ TEST(Compiler, CompileLoops) {
 TEST(Compiler, CompileLoopsThrow) {
   std::string input = "+[+[+]++";
 
-
   Compiler c = Compiler{input};
-
 
   ASSERT_THROW(c.compile(), std::runtime_error);
 }

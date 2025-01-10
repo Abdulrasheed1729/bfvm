@@ -1,4 +1,5 @@
 #include "compiler.cc"
+#include "machine.cc"
 #include <fstream>
 #include <iostream>
 #include <ostream>

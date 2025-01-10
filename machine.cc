@@ -61,7 +61,10 @@ public:
 
   std::string getOutput() const { return output.str(); }
 
-  int* getMemory() {return memory;}
+  int *getMemory() { return memory; }
+
+  // This is for testing purpose
+  void setMemoryValue(int pos, int value) { memory[pos] = value; }
 
 private:
   void readChar() {
