@@ -1,10 +1,12 @@
-#pragma once
+#ifndef __COMPILER__
+#define __COMPILER__
 
 #include "instruction.cc"
 #include <stack>
+#include <stdexcept>
 #include <string>
 #include <vector>
-#include <stdexcept>
+
 
 namespace compiler {
 class Compiler {
@@ -89,3 +91,4 @@ private:
   std::vector<machine::Instruction> instructions{};
 };
 } // namespace compiler
+#endif

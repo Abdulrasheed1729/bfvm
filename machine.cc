@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __MACHINE__
+#define __MACHINE__
 
 #include "instruction.cc"
 #include <sstream>
@@ -59,7 +60,7 @@ public:
     }
   }
 
-  std::string getOutput() const { return output.str(); }
+  inline std::string getOutput() const { return output.str(); }
 
   int *getMemory() { return memory; }
 
@@ -67,7 +68,7 @@ public:
   void setMemoryValue(int pos, int value) { memory[pos] = value; }
 
 private:
-  void readChar() {
+  inline void readChar() {
     input >> buf;
     if (input.bad()) {
       throw std::runtime_error{"wrong num bytes read"};
@@ -93,3 +94,5 @@ private:
   std::ostringstream output;
 };
 } // namespace machine
+
+#endif

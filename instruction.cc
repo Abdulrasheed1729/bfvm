@@ -1,5 +1,5 @@
-#pragma once
-
+#ifndef __INSTRUCTION__
+#define __INSTRUCTION__
 namespace machine {
 
 enum class InsType : char {
@@ -18,3 +18,4 @@ struct Instruction {
   int argument;
 };
 } // namespace machine
+#endif
