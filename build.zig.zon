@@ -1,0 +1,15 @@
+.{
+    .name = "bfvm",
+    .version = "0.1.2",
+    .dependencies = .{
+        .googletest = .{
+            .url = "https://github.com/google/googletest/archive/refs/tags/v1.16.0.zip",
+            .hash = "122023268fa0c045212e77884fdfcc1e7dede2a6956160ca0286c329a35d6e3c5cab",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "LICENSE",
+    },
+}

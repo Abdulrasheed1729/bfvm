@@ -1,7 +1,7 @@
 #ifndef __MACHINE__
 #define __MACHINE__
 
-#include "instruction.cc"
+#include "./instruction.cc"
 #include <sstream>
 #include <stdexcept>
 #include <string>

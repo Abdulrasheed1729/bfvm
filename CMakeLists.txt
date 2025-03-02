@@ -5,6 +5,7 @@ project(bfvm_test)
 # Requirements for Google Test
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 
 include(FetchContent)
@@ -20,16 +21,16 @@ enable_testing()
 
 add_executable(
 	compiler_test
-	compiler_test.cc
-	compiler.cc
-	machine.cc
+	test/compiler_test.cc
+	src/compiler.cc
+	src/machine.cc
 )
 
 add_executable(
 	machine_test
-	machine_test.cc
-	compiler.cc
-	machine.cc
+	test/machine_test.cc
+	src/compiler.cc
+	src/machine.cc
 )
 
 target_link_libraries(

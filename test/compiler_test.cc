@@ -1,4 +1,4 @@
-#include "compiler.cc"
+#include "../src/compiler.cc"
 
 #include <gtest/gtest.h>
 

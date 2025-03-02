@@ -1,5 +1,5 @@
-#include "compiler.cc"
-#include "machine.cc"
+#include "src/compiler.cc"
+#include "src/machine.cc"
 #include <fstream>
 #include <iostream>
 #include <ostream>

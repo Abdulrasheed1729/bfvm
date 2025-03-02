@@ -1,7 +1,7 @@
 #ifndef __COMPILER__
 #define __COMPILER__
 
-#include "instruction.cc"
+#include "./instruction.cc"
 #include <stack>
 #include <stdexcept>
 #include <string>
